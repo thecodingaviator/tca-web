@@ -8,6 +8,8 @@ window.onload = () => {
   if(window.localStorage.getItem('--bg') != 'white') {
     document.getElementById('checkbox').checked = true;
   }
+  document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"https:\/\/use.fontawesome.com\/releases\/v5.8.1\/css\/all.css\" >");
+  document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"https:\/\/fonts.googleapis.com\/css?family=Nunito+Sans\|Lato\" >");
 };
 
 root.addEventListener('click', e => {
