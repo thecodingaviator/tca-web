@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Web Designer, Advocate for all things Open Source, Moderator at freeCodeCamp, and Instagram Blogger">
+  <meta property="og:title" content="The Coding Aviator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecodingaviator.cf/">
+  <meta property="og:image" content="https://thecodingaviator.cf/img/code.svg">
+  <meta property="og:description" content="Web Designer, Advocate for all things Open Source, Moderator at freeCodeCamp, and Instagram Blogger">
+
 
   <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -21,6 +28,9 @@
   <script src="./index.js"></script>
 </head>
 <body>
+  <noscript>
+    Please enable JS in your browser
+  </noscript>
   <div id="welcome">
     <img src="img/code.svg" alt="Person in front of code">
     <h2>
@@ -39,35 +49,35 @@
   </div>
   <div id="contact">
     <div>
-      <img src="img/contact.svg" width="400px">
+      <img src="img/contact.svg" width="400px" alt="Contact">
     </div>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="namer">
       <div class="group">
           <label class="no-show">Don’t fill this out if you're human: <input name="namer" /></label>
       </div>
       <div class="group">
-        <input type="text" required="required" name="name">
+        <input type="text" required="required" name="name" id="name">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Name</label>
+        <label for="name">Name</label>
       </div>
       <div class="group">
-        <input type="text" required="required" name="email">
+        <input type="text" required="required" name="email" id="email">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Email address</label>
+        <label for="email">Email address</label>
       </div>
       <div class="group">
-        <input type="number" required="required" name="number">
+        <input type="number" required="required" name="number" id="number">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Phone Number</label>
+        <label for="number">Phone Number</label>
       </div>
       <div class="group">
-        <textarea type="textarea" rows="5" required="required" name="message"></textarea>
+        <textarea type="textarea" rows="5" required="required" name="message" id="message"></textarea>
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Message</label>
+        <label for="message">Message</label>
       </div>
       <div class="btn-box">
         <button class="btn btn-submit" type="submit">Submit</button>
