@@ -8,7 +8,6 @@ window.onload = () => {
   if(window.localStorage.getItem('--bg') != 'white') {
     document.getElementById('checkbox').checked = true;
   }
-  console.log("---");
 };
 
 root.addEventListener('click', e => {
