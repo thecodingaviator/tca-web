@@ -26,78 +26,93 @@
   <script src="./index.js"></script>
 </head>
 <body>
-  <noscript>
-    Please enable JS in your browser
-  </noscript>
-  <div id="welcome">
-    <img src="img/code.svg" alt="Person in front of code">
-    <h2>
-      Web Designer,<br>
-      Advocate for all things Open Source,<br>
-      Moderator @ freeCodeCamp,<br>
-      and Instagram Blogger
-    </h2>
-  </div>
-  <div>
-    <h1>Click me for a surprise</h1>
+  <div class="welcome-modal">
+    <i class="fas fa-times" id="closer"></i>
+    <h1>Would you like to continue in Dark Mode?</h1>
     <label class="switch" for="checkbox">
       <input type="checkbox" id="checkbox" />
       <div class="slider round"></div>
     </label>
   </div>
-  <div id="contact">
+  <div class="wrapper">
+    <div id="welcome">
+      <img src="img/code.svg" alt="Person in front of code">
+      <h2>
+        Web Designer,<br>
+        Advocate for all things Open Source,<br>
+        Moderator @ freeCodeCamp,<br>
+        and Instagram Blogger
+      </h2>
+    </div>
     <div>
-      <img src="img/contact.svg" width="400px" alt="Contact">
     </div>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="namer">
-      <div class="group">
-          <label class="no-show">Don’t fill this out if you're human: <input name="namer" /></label>
+    <div id="contact">
+      <div>
+        <img src="img/contact.svg" width="400px" alt="Contact">
       </div>
-      <div class="group">
-        <input type="text" required="required" name="name" id="name">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="name">Name</label>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="namer">
+        <div class="group">
+            <label class="no-show">Don’t fill this out if you're human: <input name="namer" /></label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" name="name" id="name">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="name">Name</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" name="email" id="email">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="email">Email address</label>
+        </div>
+        <div class="group">
+          <input type="number" required="required" name="number" id="number">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="number">Phone Number</label>
+        </div>
+        <div class="group">
+          <textarea type="textarea" rows="5" required="required" name="message" id="message"></textarea>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="message">Message</label>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div id="social">
+        <div>
+          <a href="https://www.instagram.com/thecodingaviator/" id="instagram" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://codepen.io/thecodingaviator/" id="codepen" class="social-link">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/codingaviator/" id="twitter" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/thecodingaviator/" id="github" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-      <div class="group">
-        <input type="text" required="required" name="email" id="email">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="email">Email address</label>
-      </div>
-      <div class="group">
-        <input type="number" required="required" name="number" id="number">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="number">Phone Number</label>
-      </div>
-      <div class="group">
-        <textarea type="textarea" rows="5" required="required" name="message" id="message"></textarea>
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label for="message">Message</label>
-      </div>
-      <div class="btn-box">
-        <button class="btn btn-submit" type="submit">Submit</button>
-      </div>
-    </form>
+      <h1>Would you like to continue in Dark Mode?</h1>
+      <label class="switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+      <h1>&copy; The Coding Aviator <script>document.write(new Date().getFullYear());</script></h1>
+    </footer>
   </div>
-  <footer>
-    <div id="social">
-      <a href="https://www.instagram.com/thecodingaviator/" id="instagram" class="social-link">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://codepen.io/thecodingaviator/" id="codepen" class="social-link">
-        <i class="fab fa-codepen"></i>
-      </a>
-      <a href="https://twitter.com/codingaviator/" id="twitter" class="social-link">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://github.com/thecodingaviator/" id="github" class="social-link">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <h1>&copy; The Coding Aviator <script>document.write(new Date().getFullYear());</script></h1>
-  </footer>
 </body>
 </html>
