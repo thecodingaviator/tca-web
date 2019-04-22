@@ -71,7 +71,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  height: fit-content !important;
   > div {
     margin-right: 2em;
     @media only screen and (max-width: calc(960px + 2em)) {
