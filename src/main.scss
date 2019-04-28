@@ -74,8 +74,20 @@ body {
   height: fit-content !important;
   > div {
     margin-right: 2em;
-    @media only screen and (max-width: calc(960px + 2em)) {
+    width: 400px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: calc(960px + 2em)) {
       margin-right: 0;
+    }
+    @media (max-width: calc(400px)) {
+      img {
+        width: 80%;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
