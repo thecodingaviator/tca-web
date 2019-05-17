@@ -67,12 +67,15 @@ body {
 }
 
 #services {
-  h1 {
-    width: 50%;
-    display: inline-block;
-  }
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   label {
     transform: scale(3);
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
