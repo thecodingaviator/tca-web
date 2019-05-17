@@ -79,6 +79,12 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  #services {
+    grid-template-columns: 1fr;
+  }
+}
+
 #contact {
   display: flex;
   justify-content: center;
