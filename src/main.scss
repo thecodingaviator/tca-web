@@ -66,6 +66,16 @@ body {
   }
 }
 
+#services {
+  h1 {
+    width: 50%;
+    display: inline-block;
+  }
+  label {
+    transform: scale(3);
+  }
+}
+
 #contact {
   display: flex;
   justify-content: center;
